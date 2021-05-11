@@ -72,4 +72,23 @@ print(text.count('ae'))
 print(text.count('a',3,15))  # exclusive
 
 # 16. endswith() method
+txt = "Hello, welcome to my world."
+x = txt.endswith(".")
+print(x)
+
+# 17. find() method: Returns -1 if value not found
+# returns first occurence
+x = txt.find("welcome")
+print(x)
+print(txt.find("globe"))
+print(txt.find("m",6,14)) # find in range [start,end]
+
+# 18. index() method: Throws exception if value not found
+x = txt.index("welcome")
+print(x)
+# print(txt.index("globe")) # ValueError: substring not found
+
+# 19. isalnum() method
+
+
 
