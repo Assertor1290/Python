@@ -76,14 +76,14 @@ x = txt.endswith(".")
 print(x)
 
 # 17. find() method: Returns -1 if value not found
-# returns first occurence
+# returns first occurrence
 x = txt.find("welcome")
 print(x)
 print(txt.find("globe"))
 print(txt.find("m", 6, 14))  # find in range [start,end]
 
 # 18. index() method: Throws exception if value not found
-# rindex(): returns index of last occurence
+# rindex(): returns index of last occurrence
 x = txt.index("welcome")
 print(x)
 # print(txt.index("globe")) # ValueError: substring not found
@@ -109,13 +109,13 @@ print('\n')
 # Hence, returns False.
 print('\nisDecimal()  Function')
 my_string = ''  # Space
-print('" " : {}'.format(my_string.isdecimal()))  # False
+print('" " : {}'.format(my_string.isdecimal()))     # False
 
 my_string = '123abc'  # Alnum
 print('123abc : {}'.format(my_string.isdecimal()))  # False
 
 my_string = '123'  # Number
-print('123 : {}'.format(my_string.isdecimal()))  # True
+print('123 : {}'.format(my_string.isdecimal()))     # True
 
 my_string = '\u00BD'  # Fraction (1/2)
 print('\u00BD : {}'.format(my_string.isdecimal()))  # False
@@ -136,13 +136,13 @@ print('\n')
 # are considered to be digits.
 print('\nisDigit()  Function')
 my_string = ''  # Space
-print('" " : {}'.format(my_string.isdigit()))  # False
+print('" " : {}'.format(my_string.isdigit()))     # False
 
 my_string = '123abc'  # Alnum
 print('123abc : {}'.format(my_string.isdigit()))  # False
 
 my_string = '123'  # Number
-print('123 : {}'.format(my_string.isdigit()))  # True
+print('123 : {}'.format(my_string.isdigit()))     # True
 
 my_string = '\u00BD'  # Fraction (1/2)
 print('\u00BD : {}'.format(my_string.isdigit()))  # False
@@ -164,13 +164,13 @@ print('\n')
 
 print('\nisnumeric()  Function')
 my_string = ''  # Space
-print('" " : {}'.format(my_string.isnumeric()))  # False
+print('" " : {}'.format(my_string.isnumeric()))     # False
 
 my_string = '123abc'  # Alnum
 print('123abc : {}'.format(my_string.isnumeric()))  # False
 
 my_string = '123'  # Number
-print('123 : {}'.format(my_string.isnumeric()))  # True
+print('123 : {}'.format(my_string.isnumeric()))     # True
 
 my_string = '\u00BD'  # Fraction (1/2)
 print('\u00BD : {}'.format(my_string.isnumeric()))  # True
