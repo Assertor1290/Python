@@ -88,7 +88,99 @@ x = txt.index("welcome")
 print(x)
 # print(txt.index("globe")) # ValueError: substring not found
 
-# 19. isalnum() method
+# 19. isalnum() method: True if all characters are alnum
+# (letter/number)
+print('Hello456'.isalnum())
+print('Hello4%6'.isalnum())
+print('Hello 456'.isalnum())
 
+# 20. isalpha(): True if all characters are alphabets
+print('Hello'.isalpha())
+print('Hello456'.isalpha())
+print('Hello World'.isalpha())
+print('\n')
 
+# By definition, isdecimal() ⊆ isdigit() ⊆ isnumeric().
+# That is, if a string is decimal, then it'll also be digit and numeric.
 
+# 21. isdecimal()
+# The superscript, subscript, fractions, and roman
+# numerals are not considered as decimal characters.
+# Hence, returns False.
+print('\nisDecimal()  Function')
+my_string = ''                 # Space
+print('" " : {}'.format(my_string.isdecimal()))        # False
+
+my_string = '123abc'           # Alnum
+print('123abc : {}'.format(my_string.isdecimal()))     # False
+
+my_string = '123'              # Number
+print('123 : {}'.format(my_string.isdecimal()))        # True
+
+my_string = '\u00BD'           # Fraction (1/2)
+print('\u00BD : {}'.format(my_string.isdecimal()))     # False
+
+my_string = '\u2168'           # Roman numeral (IX)
+print('\u2168 : {}'.format(my_string.isdecimal()))     # False
+
+my_string = '\u2077'           # Superscript
+print('\u2077 : {}'.format(my_string.isdecimal()))     # False
+
+my_string = '\u2087'           # Subscript
+print('\u2087 : {}'.format(my_string.isdecimal()))     # False
+print('\n')
+
+# 22. isdigit()
+# Roman numerals, fractions are not considered as digits.
+# The subscript, superscript and decimal characters
+# are considered to be digits.
+print('\nisDigit()  Function')
+my_string = ''                 # Space
+print('" " : {}'.format(my_string.isdigit()))        # False
+
+my_string = '123abc'           # Alnum
+print('123abc : {}'.format(my_string.isdigit()))     # False
+
+my_string = '123'              # Number
+print('123 : {}'.format(my_string.isdigit()))        # True
+
+my_string = '\u00BD'           # Fraction (1/2)
+print('\u00BD : {}'.format(my_string.isdigit()))     # False
+
+my_string = '\u2168'           # Roman numeral (IX)
+print('\u2168 : {}'.format(my_string.isdigit()))     # False
+
+my_string = '\u2077'           # Superscript
+print('\u2077 : {}'.format(my_string.isdigit()))     # True
+
+my_string = '\u2087'           # Subscript
+print('\u2087 : {}'.format(my_string.isdigit()))     # True
+print('\n')
+
+# 23. isnumeric():
+# The integers, subscript, superscript, fractions,
+# and roman numerals in Unicode are considered to be numerics.
+# Hence, returns True.
+
+print('\nisnumeric()  Function')
+my_string = ''                 # Space
+print('" " : {}'.format(my_string.isnumeric()))        # False
+
+my_string = '123abc'           # Alnum
+print('123abc : {}'.format(my_string.isnumeric()))     # False
+
+my_string = '123'              # Number
+print('123 : {}'.format(my_string.isnumeric()))        # True
+
+my_string = '\u00BD'           # Fraction (1/2)
+print('\u00BD : {}'.format(my_string.isnumeric()))     # True
+
+my_string = '\u2168'           # Roman numeral (IX)
+print('\u2168 : {}'.format(my_string.isnumeric()))     # True
+
+my_string = '\u2077'           # Superscript
+print('\u2077 : {}'.format(my_string.isnumeric()))     # True
+
+my_string = '\u2087'           # Subscript
+print('\u2087 : {}'.format(my_string.isnumeric()))     # True
+print('\n')
