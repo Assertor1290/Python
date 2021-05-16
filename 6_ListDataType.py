@@ -183,4 +183,3 @@ print(list3)
 
 # method 3
 # list1.extend(list2)
-
