@@ -183,3 +183,7 @@ print(list3)
 
 # method 3
 # list1.extend(list2)
+
+# multiply list
+mul_list = list1 * 2
+print(mul_list)
