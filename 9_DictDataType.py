@@ -43,7 +43,8 @@ print(keys)
 values = thisdict.values()
 print(values)
 
-# get items: will return each item in a dictionary, as tuples in a list.
+# get items: will return each item in a dictionary,
+# as tuples in a list.
 item = thisdict.items()
 print(item)
 
