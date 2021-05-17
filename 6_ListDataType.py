@@ -189,7 +189,8 @@ mul_list = list1 * 2
 print(mul_list)
 
 # 11. REVERSE LIST
-print(mul_list.reverse())
+mul_list.reverse()
+print(mul_list)
 
 # 12. COUNT Number of occurrences of item
 fruits = ['apple', 'banana', 'cherry']
